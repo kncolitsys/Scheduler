@@ -1,0 +1,215 @@
+/*Dashboard*/
+
+#homepage a{
+	margin:.5em;
+    padding:1em .4em 0 .4em;
+    width:15em;
+    height:12em;
+}
+
+[class*="icon-"] {
+	display: inline-block;
+	width: 136px;
+	height: 136px;
+	background-image: url('../images/icons/large/sprites.svg');
+	background-repeat: no-repeat;
+}
+
+.icon-MySchedule{
+	background-position: -304px 0;
+	width: 136px;
+}
+.icon-Schedule{
+	background-position: 0 0;
+	width: 136px;
+}
+.icon-Twitter{
+	background-position: -152px 0;
+	width: 136px;
+}
+.icon-Speakers{
+	background-position: -456px 0;
+	width: 136px;
+}
+.icon-Sessions{
+	background-position: -760px 0;
+	width: 153px;
+}
+.icon-Settings{
+	background-position: -608px 0;
+	width: 136px;
+}
+
+
+
+
+
+.mainMenuButton {
+    display:none;
+}
+
+html, body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.snap-content {
+  width: auto;
+  height: auto;
+  z-index: 2;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.snap-drawers {
+  width: auto;
+  height: auto;
+  display:block;
+}
+
+.snap-drawer {
+  width: 265px;
+  height: auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: width 0.3s ease;
+     -moz-transition: width 0.3s ease;
+      -ms-transition: width 0.3s ease;
+       -o-transition: width 0.3s ease;
+          transition: width 0.3s ease;
+}
+
+.snap-drawer-left {
+  left: 0;
+  z-index: 1;
+}
+
+.snap-drawer-right {
+  right: 0;
+  z-index: 1;
+}
+
+.snapjs-left .snap-drawer-right,
+.snapjs-right .snap-drawer-left {
+  display: none;
+}
+
+.snapjs-expand-left .snap-drawer-left,
+.snapjs-expand-right .snap-drawer-right {
+  width: 100%;
+}
+
+.page-sidebar{
+	background-image:url(../images/menu-bg.png);
+	background-repeat:repeat;
+	background-size:75px 75px;
+	width:180px;
+	display:block;
+	position:absolute;
+	z-index:2;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	overflow:hidden;
+	position:fixed;
+}
+
+.page-sidebar-scroll{
+	z-index:2;
+	width:294px;
+    overflow: scroll;
+    overflow-x: hidden;
+   /* -webkit-overflow-scrolling: touch;*/
+	height:100%;
+}
+.sidebar-breadcrumb{
+	border-top:solid 1px rgba(255,255,255,0.05);
+	border-bottom:solid 1px rgba(255,255,255,0.05);
+	background-color:#1a1a1a;
+	font-size:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:20px;
+	color:#FFFFFF;
+}
+
+.sidebar-decoration{
+	height:2px;
+	background-color:rgba(0,0,0,0.15);
+	border-bottom:solid 1px rgba(255,255,255,0.07);
+}
+
+#content{
+	margin-left:184px;
+}
+
+/*Right Column*/
+
+#rightPanel {
+	background-color:#FFFFFF;
+    position: absolute;
+  top: 0;
+  right: -466px;
+  bottom: 0;
+  left: auto;
+  width: 350px;
+  height: auto;
+  overflow: auto;
+  z-index: 2;
+  padding:8px 8px 8px 8px;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: width 0.3s ease;
+     -moz-transition: width 0.3s ease;
+      -ms-transition: width 0.3s ease;
+       -o-transition: width 0.3s ease;
+          transition: width 0.3s ease;
+          
+   border-left: 1px solid rgba(0, 0, 0, 0.1);
+   box-shadow: 0  0 0 1px rgba(255, 255, 255, 0.05);
+          
+}
+
+#rightPanelContent{
+	width:auto;
+	height:auto;
+}
+
+#rightPanelClose{
+	background-image: url("../images/close.png");
+    background-repeat:no-repeat;
+    background-size: 16px 16px;
+    float: right;
+    height: 16px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 16px;
+}
+
+.session img{
+	float:left;
+	padding-right:4px;
+	padding-bottom:4px;
+}
+
+#rightPanelContent h2{
+	font-size:1.5em;
+	line-height:1.5em;
+	display:block;
+}
+
+#sessionsPage img,
+#speakersPage img,
+#speakerPage img,
+#sessionPage img{
+	max-width:180px;
+	max-height:180px;
+}

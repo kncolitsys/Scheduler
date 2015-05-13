@@ -1,0 +1,209 @@
+.mainMenuButton {
+    background-image: url("../images/mainMenuButtonBg-x2.png");
+    background-repeat:no-repeat;
+    background-size: 24px 18px;
+    float: left;
+    height: 36px;
+    margin-top: 15px;
+    width: 36px;
+}
+
+#homepage a{
+	margin:.5em;
+    padding:1em .4em 0 .4em;
+    width:8em;
+    height:7em;
+}
+
+[class*="icon-"] {
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+	background-image: url('../images/icons/small/sprites.svg');
+	background-repeat: no-repeat;
+}
+
+.icon-MySchedule{
+	background-position: -160px 0;
+	width: 64px;
+}
+.icon-Schedule{
+	background-position: 0 0;
+	width: 64px;
+}
+.icon-Twitter{
+	background-position: -80px 0;
+	width: 64px;
+}
+.icon-Speakers{
+	background-position: -240px 0;
+	width: 64px;
+}
+.icon-Sessions{
+	background-position: -400px 0;
+	width: 72px;
+}
+.icon-Settings{
+	background-position: -320px 0;
+	width: 64px;
+}
+
+
+
+/* snap.js*/
+html, body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.snap-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.snap-drawers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+}
+
+.snap-drawer {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: auto;
+  width: 265px;
+  height: auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: width 0.3s ease;
+     -moz-transition: width 0.3s ease;
+      -ms-transition: width 0.3s ease;
+       -o-transition: width 0.3s ease;
+          transition: width 0.3s ease;
+}
+
+.snap-drawer-left {
+  left: 0;
+  z-index: 1;
+}
+
+.snap-drawer-right {
+  right: 0;
+  z-index: 1;
+}
+
+.snapjs-left .snap-drawer-right,
+.snapjs-right .snap-drawer-left {
+  display: none;
+}
+
+.snapjs-expand-left .snap-drawer-left,
+.snapjs-expand-right .snap-drawer-right {
+  width: 100%;
+}
+
+.snapjs-right .snap-drawer-left {
+	display: block;
+	right: 0;
+	left: auto;
+}
+
+#open-left {
+  background: url(open.png) center center no-repeat;
+  display: block;
+  width: 44px;
+  height: 44px;
+}
+
+.opt {
+	padding: 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.opt p {
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 5px;
+	color: #222;
+	color: rgba(0, 0, 0, 0.6);
+}
+.snap-content {
+	background: url("../images/bgPat-1.png") repeat scroll 0 0 #80A697;
+    font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+.snap-drawers {
+  background: #323949;
+}
+
+.snap-drawer {
+	background: #323949;
+	color: #eee;
+}
+
+.page-sidebar{
+	width:274px;
+	z-index:2;
+	float:left;
+}
+
+.page-sidebar-scroll{
+	z-index:2;
+	width:294px;
+   /* -webkit-overflow-scrolling: touch;*/
+	height:100%;
+}
+.sidebar-breadcrumb{
+	border-top:solid 1px rgba(255,255,255,0.05);
+	border-bottom:solid 1px rgba(255,255,255,0.05);
+	background-color:#1a1a1a;
+	font-size:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:20px;
+}
+
+.sidebar-decoration{
+	height:2px;
+	background-color:rgba(0,0,0,0.15);
+	border-bottom:solid 1px rgba(255,255,255,0.07);
+}
+
+#rightPanel{
+	display:none;
+}
+
+.session img{
+	display:none;
+}
+
+#sessionsPage img,
+#speakersPage img,
+#speakerPage img,
+#sessionPage img{
+	max-width:120px;
+	max-height:120px;
+}

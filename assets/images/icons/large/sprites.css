@@ -1,0 +1,31 @@
+[class*="icon-"] {
+	display: inline-block;
+	width: 136px;
+	height: 136px;
+	background-image: url(sprites.svg);
+	background-repeat: no-repeat;
+}
+.icon-calendar {
+	background-position: 0 0;
+	width: 136px;
+}
+.icon-twitter {
+	background-position: -152px 0;
+	width: 136px;
+}
+.icon-notebook {
+	background-position: -304px 0;
+	width: 136px;
+}
+.icon-users {
+	background-position: -456px 0;
+	width: 136px;
+}
+.icon-cogs {
+	background-position: -608px 0;
+	width: 136px;
+}
+.icon-bubbles {
+	background-position: -760px 0;
+	width: 153px;
+}
